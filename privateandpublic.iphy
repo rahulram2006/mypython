@@ -1,0 +1,9 @@
+class BankAccount:
+    def __init__(self):
+        self.public = "hello"
+        self. _private= "bye"
+    def rajeshprivate(self):
+        print(self._private)
+neha=BankAccount()
+print(neha.public)
+neha.rajeshprivate()   
