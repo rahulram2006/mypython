@@ -1,0 +1,38 @@
+class Animal:
+    def __init__(self, name, species):
+        self.name = name  
+        self.species = species  
+
+    def speak(self):
+        
+        print(f"{self.name} makes a sound.")
+
+
+class Dog(Animal):
+    def __init__(self, name, breed):
+        
+        super().__init__(name, species="Dog")
+        self.breed = breed 
+
+    def speak(self):
+        
+        print(f"{self.name} barks.")
+
+    def fetch(self):
+        
+        print(f"{self.name} is fetching the ball!")
+
+
+
+
+animal = Animal("Generic Animal", "Unknown")
+animal.speak()  
+
+
+dog = Dog("Buddy", "Golden Retriever")
+dog.speak()  
+dog.fetch() 
+
+print(dog.name)  
+print(dog.species) 
+print(dog.breed)  
