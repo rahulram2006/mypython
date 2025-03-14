@@ -1,0 +1,6 @@
+class circle:
+  def area(self):
+     return 3.14*float(self.radius*self.radius)
+circle1=circle()
+circle1.radius=8
+circle1.area()
